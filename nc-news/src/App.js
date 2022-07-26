@@ -8,7 +8,7 @@ import {
 
 import Navigation from './components/Navigation'
 import HomeBody from './components/HomeBody';
-import ArticlesBody from './components/ArticlesBody';
+import ArticleList from './components/ArticleList';
 import ArticleBody from './components/ArticleBody';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<HomeBody />} />
-            <Route path='/articles' element={<ArticlesBody />} />
+            <Route path='/articles' element={<ArticleList />} />
             <Route path='/articles/:article_id' element={<ArticleBody />} />
           </Routes>
         </main>

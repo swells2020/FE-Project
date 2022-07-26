@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export function articlesApi() {
+export function fetchArticles() {
     return axios.get('https://callums-be-project.herokuapp.com/api/articles')
         .then(({ data: { articles } }) => {
 
