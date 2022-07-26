@@ -20,11 +20,13 @@ export default function ArticleList() {
         return <p>Loading...</p>
     } else {
         return (
-            <section>
+            <section className='ArticleList'>
                 <h2>Articles</h2>
-                {articlesState.map(article => {
-                    return <ArticleCard key={article.article_id} article={article} />
-                })}
+                <section className='ArticleCards'>
+                    {articlesState.map(article => {
+                        return <ArticleCard key={article.article_id} article={article} />
+                    })}
+                </section>
             </section>
         )
     }

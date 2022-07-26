@@ -1,3 +1,68 @@
 .App {
+  font-family: 'Franklin Gothic Medium', 'Arial ', Arial, sans-serif;
   text-align: center;
+}
+
+header {
+  padding-bottom: 10px;
+  border-bottom: 3px solid red;
+}
+
+label {
+  padding: 10px;
+}
+
+.Link {
+  padding: 10px;
+}
+
+.ArticleCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ArticleCard {
+  box-shadow: 2px 2px 5px 2px gray;
+  
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  height: 25%;
+  min-height: 25%;
+  max-height: 25%;
+  width: 22.5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.ArticleCard-Header {
+  font-size: medium;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArticleCard-Topic {
+  font-size: small;
+}
+
+.ArticleCard-Author {
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArticleCard-Detail {
+  padding: 10px;
+  margin: 10px;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
