@@ -4,7 +4,7 @@ import { articlesApi } from '../api'
 import ArticleCard from './ArticleCard'
 
 export default function ArticleList() {
-    const [articlesState, setArticlesState] = useState([])
+    const [articlesState, setArticlesState] = useState([]);
     const [loadingState, setLoadingState] = useState(true);
 
     useEffect(() => {
