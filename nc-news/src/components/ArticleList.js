@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import { fetchArticles } from '../api'
 import ArticleCard from './ArticleCard'
@@ -24,7 +25,11 @@ export default function ArticleList() {
                 <h2>Articles</h2>
                 <section className='ArticleCards'>
                     {articlesState.map(article => {
-                        return <ArticleCard key={article.article_id} article={article} />
+                        return (
+                            <Link className='ArticleCard' to={`/articles/${article.article_id}`}>
+                                <ArticleCard key={article.article_id} article={article} />
+                            </Link>
+                        )
                     })}
                 </section>
             </section>

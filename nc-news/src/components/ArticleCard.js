@@ -1,7 +1,7 @@
 export default function ArticleCard({ article }) {
 
     return (
-        <section className="ArticleCard">
+        <section>
             <h2 className="ArticleCard-Topic">{article.topic}</h2>
             <h3 className="ArticleCard-Header">{article.title}</h3>
             <div className="ArticleCard-Author">

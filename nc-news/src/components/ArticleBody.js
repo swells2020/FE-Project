@@ -5,6 +5,6 @@ export default function ArticleBody() {
     const {article_id} = useParams()
 
     return (
-        <ArticlePage article_id={article_id}/>
+            <ArticlePage article_id={article_id}/>
     )
 }
