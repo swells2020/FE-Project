@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { articlesApi } from '../api'
+import { fetchArticles } from '../api'
 import ArticleCard from './ArticleCard'
 
 export default function ArticleList() {
@@ -8,7 +8,7 @@ export default function ArticleList() {
     const [loadingState, setLoadingState] = useState(true);
 
     useEffect(() => {
-        articlesApi()
+        fetchArticles()
             .then((articles) => {
                 setArticlesState(articles)
                 setLoadingState(false)
