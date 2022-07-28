@@ -6,6 +6,7 @@ export default function Navigation() {
         <nav>
             <Link className="Link" to='/'>Home</Link>
             <Link className="Link" to='/articles'>Articles</Link>
+            <Link className="Link" to='/topics'>Topics</Link>
         </nav>
     )
 }

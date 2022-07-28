@@ -9,6 +9,7 @@ import {
 import Navigation from './components/Navigation'
 import HomeBody from './components/HomeBody';
 import ArticleList from './components/ArticleList';
+import TopicBody from './components/TopicBody';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomeBody />} />
             <Route path='/articles' element={<ArticleList />} />
+            <Route path='/topics/*' element={<TopicBody />} />
           </Routes>
         </main>
       </div>
