@@ -5,7 +5,7 @@ export default function ArticleCard({ article }) {
             <h2 className="ArticleCard-Topic">{article.topic}</h2>
             <h3 className="ArticleCard-Header">{article.title}</h3>
             <div className="ArticleCard-Author">
-                <label for='ArticleCard-Author'>Author: </label><p id='ArticleCard-Author'>{article.author}</p>
+                <label htmlFor='ArticleCard-Author'>Author: </label><p id='ArticleCard-Author'>{article.author}</p>
             </div>
             <div className="ArticleCard-Detail">
                 <p id='ArticleCard-Votes'>{article.votes} votes</p><br />
