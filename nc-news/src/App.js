@@ -10,6 +10,7 @@ import Navigation from './components/Navigation'
 import HomeBody from './components/HomeBody';
 import ArticleList from './components/ArticleList';
 import ArticleBody from './components/ArticleBody';
+import TopicBody from './components/TopicBody';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={<HomeBody />} />
             <Route path='/articles' element={<ArticleList />} />
             <Route path='/articles/:article_id' element={<ArticleBody />} />
+            <Route path='/topics/*' element={<TopicBody />} />
           </Routes>
         </main>
       </div>
