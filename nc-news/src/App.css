@@ -8,6 +8,12 @@ header {
   border-bottom: 3px solid red;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 label {
   padding: 10px;
 }
@@ -26,7 +32,10 @@ p {
   flex-wrap: wrap;
 }
 
-.ArticleCard {
+.ArticleCard{
+  color: black;
+  text-decoration: none;
+
   box-shadow: 2px 2px 5px 2px gray;
   
   border-radius: 5px;
@@ -71,11 +80,17 @@ p {
   justify-content: center;
 }
 
+.ArticlePage{
+  color: black;
+  text-decoration: none;
+}
+
 .TopicBody-TopicTiles { 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  min-width: 100%;
 }
 
 .TopicCard {
@@ -84,12 +99,49 @@ p {
   border-radius: 5px;
   margin: 10px;
   padding: 5px;
-  min-width: 30%;
+  height: 25%;
+  min-height: 25%;
+  max-height: 25%;
+  width: 95%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+}
+.ArticlePage-Header {
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArticlePage-Topic {
+  font-size: small;
+}
+
+.ArticlePage-Author {
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArticlePage-Details {
+  padding: 10px;
+  margin: 10px;
+  font-size: x-small;
+  display: flex;
+}
+
+.ArticlePage-Body {
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .TopicCard-Slug {
