@@ -6,7 +6,6 @@ export function fetchArticles(params) {
         url = `https://callums-be-project.herokuapp.com/api/articles?topic=${params}`
     }
 
-    console.log(url)
     return axios.get(url)
         .then(({ data: { articles } }) => {
 
@@ -29,3 +28,11 @@ export function fetchTopics() {
             return topics;
         })
 };
+
+export function patchArticle(article_id, patchData) {
+    return axios.patch(`https://callums-be-project.herokuapp.com/api/articles/${article_id}`, patchData)
+    .then(({ data: { article } }) => {
+
+        return article;
+    })
+}

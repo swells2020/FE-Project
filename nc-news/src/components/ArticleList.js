@@ -11,7 +11,6 @@ export default function ArticleList() {
 
     const params = useParams();
 
-    console.log(params)
     useEffect(() => {
         fetchArticles(params.topic)
             .then((articles) => {
@@ -30,8 +29,8 @@ export default function ArticleList() {
                 <section className='ArticleCards'>
                     {articlesState.map(article => {
                         return (
-                            <Link className='ArticleCard' to={`/articles/${article.article_id}`}>
-                                <ArticleCard key={article.article_id} article={article} />
+                            <Link className='ArticleCard' key={article.article_id} to={`/articles/${article.article_id}`}>
+                                <ArticleCard  article={article} />
                             </Link>
                         )
                     })}
